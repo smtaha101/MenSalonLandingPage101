@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.banner
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("../images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .content
+{
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+.banner .content h1
+{
+    color: #fff;
+    font-size: 4em;
+    letter-spacing: 2px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    
+}
+.banner .content h1 span
+{
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(14, 14, 14, 0.6);
+}
+.btn1
+{
+    display: inline-block;
+    background-color: rgb(161, 161, 161);
+    padding: 5px 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-right: 20px;
+    border: 3px solid rgb(216, 216, 216);
+    letter-spacing: 1px;
+    transition-duration: 0.4s;
+}
+.btn2
+{
+    display: inline-block;
+    background-color: rgb(161, 161, 161);
+    padding: 5px 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border: 3px solid rgb(216, 216, 216);
+    transition-duration: 0.4s;
+}
+.btn1:hover
+{
+    background-color:rgb(104, 104, 104);
+}
+.btn2:hover
+{
+    background-color:rgb(102, 102, 102);
+}
+header
+{
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 80px;
+    z-index: 1000;
+}
+header .logo
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+header ul
+{
+    display: flex;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 40px;
+}
+header ul li a
+{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4em;
+    padding: 2px 15px;
+    font-weight: 500;
+    transition-duration: 0.3s;
+}
+header ul li a:hover
+{
+    background-color: rgb(192, 192, 192);
+    color: #000;
+}
+.menuToggle
+{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 30px;
+    height: 20px;
+    background: url("../images/menu.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 3;
+    display: none;
+}
+.menuToggle.active
+{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 30px;
+    height: 20px;
+    background: url("../images/close.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.menu
+{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 50%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.9);
+    transition-duration: 0.4s;
+}
+.menu ul li
+{
+    list-style: none;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.menu ul li a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.menu.active
+{
+    right: 0px;
+}

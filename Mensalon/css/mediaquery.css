@@ -1,0 +1,65 @@
+@media (max-width: 1290px)
+{
+    header
+    {
+        padding: 40px 40px;
+    }
+}
+@media (max-width: 1210px)
+{
+    header
+    {
+        padding: 40px 25px;
+    }
+    header .logo
+    {
+        letter-spacing: 2px;
+    }
+    header ul li
+    {
+        margin-left: 20px;
+    }
+    .banner .content h1
+    {
+        font-size: 2.6em;
+        letter-spacing: 1px;
+    }
+}
+@media (max-width: 1015px)
+{
+    header .logo
+    {
+        font-size: 1.5em;
+    }
+    header ul li a
+    {
+        font-size: 1.2em;
+    }
+    .banner
+    {
+        padding: 30px;
+    }
+    .banner .content
+    {
+        text-align: left;
+    }
+    .banner .content h1
+    {
+        font-size: 2.4em;
+    }
+    .banner a
+    {
+        font-size: 1em;
+    }
+}
+@media (max-width: 810px)
+{
+    header ul 
+    {
+        display: none;
+    }
+    .menuToggle
+    {
+        display: flex;
+    }
+}

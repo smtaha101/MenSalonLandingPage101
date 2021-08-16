@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men Salon | Landing Page</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+</head>
+<body>
+    <section class="banner">
+        <header>
+            <a href="" class="logo">Beardo Men Salon</a>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <div class="menuToggle" onclick="togglemenu()"></div>
+        </header>
+        <div class="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>We Create And Renovate Hair Style Trends. <br><span>It pays to look well</span></h1>
+            <a href="" class="btn1">Get Appointment</a>
+            <a href="" class="btn2">Contact Us</a>
+        </div>
+        <div class="overlay"></div>
+    </section>
+
+    <script>
+        function togglemenu()
+        {
+            var menuToggle = document.querySelector(".menuToggle");
+            var menu = document.querySelector(".menu");
+            menuToggle.classList.toggle("active");
+            menu.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
